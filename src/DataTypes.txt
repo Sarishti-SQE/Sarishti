@@ -1,0 +1,155 @@
+"1) What are the eight primitive data types with their max value supported by the Java programming language?"
+Java provides eight primitive data types, each with a specific range and size. Here is the detail :
+
+1. byte : The byte data type in Java is an 8-bit signed integer. It has the following key points:
+
+   Size: 8 bits (1 byte).
+   Range: Values between -128 and 127.
+   Use Cases:
+        Memory optimization for small values.
+        Working with binary data (e.g., reading/writing files).
+        When working with raw byte streams (like in image processing or file handling).
+
+2. short : The short data type in Java is a 16-bit signed integer. Here are the key points:
+
+   Size: 16 bits (2 bytes).
+   Range: Values between -32,768 and 32,767.
+   Use Cases:
+        When you need to save memory compared to int but still require a larger range than byte.
+        Often used for smaller integers in memory-sensitive applications.
+
+3. int  : The int data type in Java is a 32-bit signed integer. Here are the key points:
+
+   Size: 32 bits (4 bytes).
+   Range: Values between -2,147,483,648 and 2,147,483,647.
+   Use Cases:
+       The default data type for representing integer values.
+       Commonly used for counting, indexing, and general arithmetic operations.
+
+4. long : The long data type in Java is a 64-bit signed integer. Here are the key points:
+
+   Size: 64 bits (8 bytes).
+   Range: Values between -9,223,372,036,854,775,808 and 9,223,372,036,854,775,807.
+   Use Cases:
+       Used when integer values exceed the range of int.
+       Ideal for large numbers, such as timestamps, large file sizes, or financial calculations.
+
+5. float : The long data type in Java is a 64-bit signed integer. Here are the key points:
+
+   Size: 64 bits (8 bytes).
+   Range: Values between -9,223,372,036,854,775,808 and 9,223,372,036,854,775,807.
+   Use Cases:
+       Used when integer values exceed the range of int.
+       Ideal for large numbers, such as timestamps, large file sizes, or financial calculations.
+
+6. double : The double data type in Java is a 64-bit double-precision floating-point number. Here are the key points:
+
+   Size: 64 bits (8 bytes).
+   Range: Approximately ±1.8 × 10^308, with a precision of up to 15-16 decimal digits.
+   Use Cases:
+       Used for storing floating-point numbers with high precision.
+       Ideal for scientific calculations, financial computations, and applications requiring large or precise decimal values.
+7. char : The char data type in Java is a 16-bit Unicode character. Here are the key points:
+
+   Size: 16 bits (2 bytes).
+   Range: Represents a single character from the Unicode character set, with values ranging from 0 to 65,535.
+   Use Cases:
+       Used to store a single character, such as letters, digits, or symbols.
+       deal for handling characters in text and working with Unicode characters (international languages, symbols, etc.).
+8. boolean : The boolean data type in Java represents one of two values: true or false. Here are the key points:
+
+   Size: Not officially specified (it is typically represented as 1 bit, though it may take more space in memory due to how Java handles memory allocation).
+   Values: It can only have two possible values: true or false.
+   Use Cases:
+       Used to represent logical values, such as flags, conditions, or binary states (e.g., on/off, yes/no).
+       Commonly used in control flow statements like if, while, and for, or in logical operations.
+
+"2) Which of the following option leads to the portability and security of Java?
+
+a)Bytecode is executed by JVM
+b)The applet makes the Java code secure and portable
+c)Use of exception handling
+d)Dynamic binding between objects"
+
+The correct answer is a) Bytecode is executed by JVM.
+Explanation:
+Java code is compiled into bytecode, which is platform-independent. The JVM (Java Virtual Machine) executes this
+bytecode on any platform, ensuring both portability and security. Portability comes from bytecode's ability to
+run on any platform with a JVM, and security is provided by the JVM's ability to check for malicious code before
+execution.
+
+3) _____ is used to find and fix bugs in the Java programs.
+
+ JVM
+ JRE
+ JDK
+ JDB"
+
+Explanation:
+JDB (Java Debugger) is a tool used to find and fix bugs in Java programs. It allows developers to inspect and control
+the execution of Java programs, set breakpoints, step through code, and examine variables to help identify issues during
+program execution.
+
+"4) What does the expression float a = 35 / 0 return?
+
+0
+Not a Number
+Infinity
+Run time exception"
+
+The correct answer is Run time exception.
+
+Explanation:
+In Java, dividing an integer by zero results in a runtime exception, specifically an ArithmeticException. In this case,
+the expression 35 / 0 involves dividing an integer (35) by zero, which causes a runtime error.
+
+"5) Evaluate the following Java expression, if x=3, y=5, and z=10:
+
+++z + y - y + z + x++
+
+24
+23
+20
+25"
+
+The correct answer is 25.
+
+Explanation:
+Given the expression: ++z + y - y + z + x++
+
+Let's evaluate it step-by-step with the initial values of x = 3, y = 5, and z = 10.
+
+1. ++z: This is a pre-increment operation, which means z is incremented first, then used.
+
+        z becomes 11 and the value used is 11.
+2.  y: The value of y is 5.
+
+3.  - y: Subtract y from the expression, which is 5. So this becomes 5 - 5 = 0.
+
+4.  + z: The value of z after pre-increment is now 11. So this adds 11.
+
+5.  x++: This is a post-increment operation, meaning the value of x is used first, and then x is incremented.
+
+The value of x used is 3, and after this operation, x becomes 4.
+Now, let's put it all together:
+
+++z + y - y + z + x++
+11 + 5 - 5 + 11 + 3 = 25
+Thus, the final result is 25.
+
+"6. Which component is used to compile, debug and execute java program?
+a) JVM
+b) JDK
+c) JIT
+d) JRE"
+
+
+The correct answer is b) JDK.
+
+Explanation:
+The JDK (Java Development Kit) is the complete set of tools required to compile, debug, and execute Java programs.
+It includes:
+
+Javac: The Java compiler to compile Java source code into bytecode.
+JVM: The Java Virtual Machine to execute the bytecode.
+JDB: A debugger for troubleshooting Java programs.
